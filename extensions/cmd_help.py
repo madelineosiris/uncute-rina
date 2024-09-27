@@ -21,7 +21,7 @@ help_pages: dict[int, HelpPage] = {
 %%qotw%% and %%developer_request%%: Suggest a Question Of The Week or Bot Suggestion to staff
 %%reminder reminders%%: Make or see your reminders
 %%roll%%: Roll some dice with a random result
-%%tag%%: Get information about some of the server's extra features
+%%tag%%: Get information about some of the server's extra features and server information
 %%todo%%: Make, add, or remove items from your to-do list
 %%toneindicator%%: Look up which tone tag/indicator matches your input (eg. /srs)
 
@@ -109,9 +109,10 @@ Make a custom voice channel by joining "Join to create VC" (use %%tag%% `tag:cus
                       ". . **122:** qotw (question of the week)\n"
     ),
     6 : HelpPage(
-        title = "Work in progress...",
-        description = "This section is still being worked on! (help, so much text to write D: )\n"
-                      "Scroll a few pages ahead to see what the rest of the help pages look like!"
+        title = "Internet Search Commmands",
+        description = "When curiosity killed the cat, you just gotta know..."
+                      "equaldex, math, dictionary, toneindicator (kinda not really API / internet but oh well)"
+                      "(WIP) lol"
     ),
     7 : HelpPage( # index: Suggestion commands
         title = "placeholder (skip ahead)",
@@ -172,12 +173,12 @@ Make a custom voice channel by joining "Join to create VC" (use %%tag%% `tag:cus
                       "difficult.\n"
                       "\n"
                       "For that reason, this cool command lets you do things like -> %%help%% <- this "
-                      "for Rina!\n"
+                      "For Rina!\n"
                       "\n"
                       "On a technical level, all commands have a name and unique ID, like "
                       "so: `%%help%%`. Other bot commands with the same name have a different "
                       "ID. Mismatched IDs will autofill incorrect on Android, and try to run "
-                      "a nonexisting command: </id_is_1234:1234> (`</id_is_1234:1234>`).",
+                      "A nonexisting command: /execute order:66 ",
         fields = [
             (
                 "Parameters",
